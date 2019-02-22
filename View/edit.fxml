@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="522.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="444.0" prefWidth="473.0">
+         <children>
+            <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="0.0" prefWidth="239.0">
+               <children>
+                  <HBox id="c2TextFieldName" alignment="CENTER" prefHeight="40.0" prefWidth="230.0" spacing="10.0">
+                     <children>
+                        <Label text="TITLE">
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets right="34.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField id="c2TextFieldTitle" prefWidth="120.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="230.0" spacing="10.0">
+                     <children>
+                        <Label text="GENRE">
+                           <HBox.margin>
+                              <Insets right="47.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox id="c2CmbGenre" prefWidth="120.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="230.0" spacing="10.0">
+                     <children>
+                        <Label text="LOCATION">
+                           <HBox.margin>
+                              <Insets right="25.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox id="c2CmbLocation" prefWidth="120.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="230.0" spacing="10.0">
+                     <children>
+                        <Label text="DATE">
+                           <HBox.margin>
+                              <Insets right="53.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker id="c2DatePicker" prefWidth="120.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="230.0" spacing="10.0">
+                     <children>
+                        <Label text="PRODUCE">
+                           <padding>
+                              <Insets right="30.0" />
+                           </padding>
+                        </Label>
+                        <TextField id="c2TextFieldProduce" fx:id="t2TextFieldProduce" prefWidth="120.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="230.0" spacing="10.0">
+                     <children>
+                        <Label text="RUNNING TIME" />
+                        <TextField id="c2TextFieldRunningTime" prefWidth="120.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <ImageView id="c2ImageView" fitHeight="185.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../bin/images/basicimage.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button id="c2ButtonImage" mnemonicParsing="false" text="IMAGE" />
+               </children>
+            </VBox>
+            <VBox fillWidth="false" prefHeight="444.0" prefWidth="238.0">
+               <children>
+                  <Label text="TAG #1">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="40.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="50.0" prefWidth="176.0">
+                     <children>
+                        <VBox prefHeight="50.0" prefWidth="90.0" spacing="10.0">
+                           <children>
+                              <RadioButton id="c2RdoFamily" mnemonicParsing="false" text="Family" userData="#FAMILY" />
+                              <RadioButton id="c2RdoFriends" mnemonicParsing="false" text="Friends" userData="#FRIENDS" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="0.0" prefWidth="80.0" spacing="10.0">
+                           <children>
+                              <RadioButton id="c2RdoCouple" mnemonicParsing="false" text="Couple" userData="#COUPLE" />
+                              <RadioButton id="c2RdoKids" mnemonicParsing="false" text="Kids" userData="#KIDS" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="40.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label text="TAG #2">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="40.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="75.0" prefWidth="176.0">
+                     <children>
+                        <VBox prefHeight="75.0" prefWidth="90.0" spacing="10.0">
+                           <children>
+                              <RadioButton id="c2RdoRomantic" mnemonicParsing="false" text="Romantic" userData="#ROMANTIC" />
+                              <RadioButton id="c2RdoScience" mnemonicParsing="false" text="Science" userData="#SCIENCE" />
+                              <RadioButton id="c2RdoHorror" mnemonicParsing="false" text="Horror" userData="#HORROR" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="0.0" prefWidth="80.0" spacing="10.0">
+                           <children>
+                              <RadioButton id="c2RdoComedy" mnemonicParsing="false" text="Comedy" userData="#COMEDY" />
+                              <RadioButton id="c2RdoAction" mnemonicParsing="false" text="Action" userData="#ACTION" />
+                              <RadioButton id="c2RdoDramatic" mnemonicParsing="false" text="Dramatic" userData="#DRAMATIC" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="40.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label text="NOTICE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="40.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField id="c2TextFieldNotice" prefHeight="44.0" prefWidth="176.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="40.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="CAST">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="40.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="c2TextFieldCast" prefHeight="50.0" prefWidth="176.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="40.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="SYNOPSIS">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="40.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField id="c2TextFieldSynopsis" prefHeight="60.0" prefWidth="176.0">
+                     <VBox.margin>
+                        <Insets left="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="3.0" right="3.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="47.0" prefWidth="458.0">
+         <children>
+            <Button id="c2ButtonEdit" mnemonicParsing="false" text="EDIT">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button id="c2ButtonClear" mnemonicParsing="false" text="CLEAR">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="3.0" />
+         </padding>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" top="10.0" />
+   </padding>
+</VBox>

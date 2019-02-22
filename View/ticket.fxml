@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fillWidth="false" prefHeight="489.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+   				<HBox alignment="CENTER" fillHeight="false" prefHeight="58.0" prefWidth="796.0">
+                     <children>
+                        <Label fx:id="c1LabelTitle" alignment="CENTER" prefHeight="53.0" prefWidth="428.0" text="TICKET" />
+                     </children>
+                </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="2.0" prefWidth="796.0" spacing="10.0">
+         <children>
+            <Label text="CUSTOMER">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="NAME" />
+            <TextField id="c1TextFieldName" prefWidth="120.0" />
+            <Label text="PHONE">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </Label>
+            <TextField id="c1TextFieldPhone" prefWidth="120.0" />
+            <Label text="DATE">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker id="c1DatePicker" prefWidth="109.0" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox fillHeight="false" prefHeight="357.0" prefWidth="727.0">
+         <children>
+            <TableView id="c1TableViewTicket" prefHeight="360.0" prefWidth="259.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="TITLE" />
+                <TableColumn prefWidth="75.0" text="TICKET" />
+                  <TableColumn prefWidth="75.0" text="PRICE" />
+              </columns>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </TableView>
+            <TableView id="c1TableViewSellTicket" prefHeight="360.0" prefWidth="315.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="TICKET" />
+                <TableColumn prefWidth="75.0" text="CUSTOMER" />
+                  <TableColumn prefWidth="75.0" text="PHONE" />
+                  <TableColumn prefWidth="75.0" text="DATE" />
+              </columns>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TableView>
+            <VBox fillWidth="false" prefHeight="349.0" prefWidth="113.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="175.0" prefWidth="100.0" spacing="5.0">
+                     <children>
+                        <Label text="REMAIN">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="30.0" prefWidth="200.0" spacing="15.0">
+                           <children>
+                              <Label text="R">
+                                 <HBox.margin>
+                                    <Insets right="1.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="c1TextFieldRRemain" prefWidth="80.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="143.0" spacing="15.0">
+                           <children>
+                              <Label text="A">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="c1TextFieldARemain" prefWidth="80.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="200.0" spacing="15.0">
+                           <children>
+                              <Label text="B">
+                                 <HBox.margin>
+                                    <Insets right="1.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="c1TextFieldBRemain" prefWidth="80.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="173.0" prefWidth="100.0" spacing="5.0">
+                     <children>
+                        <Label text="SELL">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="30.0" prefWidth="200.0" spacing="15.0">
+                           <children>
+                              <Label text="R">
+                                 <HBox.margin>
+                                    <Insets right="1.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="c1TextFieldRSell" prefWidth="80.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="143.0" spacing="15.0">
+                           <children>
+                              <Label text="A">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="c1TextFieldASell" prefWidth="80.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="200.0" spacing="15.0">
+                           <children>
+                              <Label text="B">
+                                 <HBox.margin>
+                                    <Insets right="1.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="c1TextFieldBSell" prefWidth="80.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="15.0" top="15.0" />
+         </VBox.margin></HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="13.0" prefWidth="727.0">
+         <children>
+            <Button id="c1ButtonSell" mnemonicParsing="false" text="SELL">
+               <HBox.margin>
+                  <Insets left="15.0" right="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="c1ButtonRefund" mnemonicParsing="false" text="REFUND">
+               <HBox.margin>
+                  <Insets right="2.0" />
+               </HBox.margin></Button>
+            <Button id="c1ButtonDelete" mnemonicParsing="false" text="DELETE" />
+            <TextField id="c1TextFieldSearch" prefHeight="23.0" prefWidth="138.0" promptText="PHONE NUMBER">
+               <HBox.margin>
+                  <Insets left="216.0" />
+               </HBox.margin>
+            </TextField>
+            <Button id="c1ButtonSearch" mnemonicParsing="false" text="SEARCH" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="7.0" top="2.0" />
+   </padding>
+</VBox>
