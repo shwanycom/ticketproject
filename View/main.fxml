@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainController">
+  <tabs>
+    <Tab text="OVERVIEW">
+         <content>
+            <VBox fillWidth="false" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="58.0" prefWidth="900.0">
+                     <children>
+                        <Label fx:id="t1LabelTitle" alignment="CENTER" prefHeight="35.0" prefWidth="391.0" text="OVERVIEW" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="24.0" prefWidth="900.0" spacing="1.0">
+                     <children>
+                        <DatePicker fx:id="t1DatePicker" prefHeight="23.0" prefWidth="145.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </DatePicker>
+                        <DatePicker fx:id="t1DatePickerLast" prefHeight="23.0" prefWidth="145.0" />
+                        <Button fx:id="t1ButtonDateSearch" mnemonicParsing="false" text="SEARCH">
+                           <HBox.margin>
+                              <Insets right="197.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="t1ButtonResetTable" mnemonicParsing="false" text="RESET TABLE" />
+                        <Button fx:id="t1ButtonTicket" mnemonicParsing="false" prefWidth="80.0" text="TICKET" />
+                        <Button fx:id="t1ButtonEdit" mnemonicParsing="false" prefWidth="80.0" text="EDIT" />
+                        <Button fx:id="t1ButtonDelete" mnemonicParsing="false" prefWidth="80.0" text="DELETE" />
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" left="5.0" right="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="300.0" prefWidth="896.0">
+                     <children>
+                        <TableView fx:id="t1TableView" prefHeight="311.0" prefWidth="901.0">
+                          <columns>
+                              <TableColumn prefWidth="75.0" text="CODE" />
+                            <TableColumn text="GENRE" />
+                            <TableColumn prefWidth="100.0" text="TITLE" />
+                              <TableColumn prefWidth="70.0" text="LOCATION" />
+                              <TableColumn prefWidth="110.0" text="DATE" />
+                              <TableColumn prefWidth="100.0" text="TAG" />
+                              <TableColumn prefWidth="130.0" text="RUNNING TIME" />
+                              <TableColumn prefWidth="58.0" text="R" />
+                              <TableColumn prefWidth="58.0" text="A" />
+                              <TableColumn prefWidth="58.0" text="B" />
+                          </columns>
+                        </TableView>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="23.0" prefWidth="900.0">
+                     <children>
+                        <Button fx:id="t1ButtonView" mnemonicParsing="false" prefHeight="23.0" prefWidth="130.0" text="VIEW">
+                           <HBox.margin>
+                              <Insets bottom="1.0" right="490.0" />
+                           </HBox.margin>
+                        </Button>
+                        <TextField fx:id="t1TextFieldSearch" prefHeight="23.0" prefWidth="199.0" promptText="ex) lionking">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="t1ButtonSearch" mnemonicParsing="false" prefHeight="23.0" prefWidth="90.0" text="SEARCH" />
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" top="1.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="9.0" prefWidth="900.0">
+                     <children>
+                        <Separator prefHeight="10.0" prefWidth="890.0" />
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="248.0" prefWidth="896.0" spacing="15.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="241.0" prefWidth="239.0">
+                           <children>
+                              <ImageView fx:id="t1ImageView" fitHeight="230.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../bin/images/basicimage.png" />
+                                 </image></ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="GENRE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font></Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="30.0" prefWidth="0.0">
+                                 <children>
+                                    <TextField fx:id="t1TextFieldGenre" editable="false" maxWidth="200.0" prefHeight="30.0" prefWidth="170.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="TITLE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font></Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="16.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="30.0" prefWidth="0.0">
+                                 <children>
+                                    <TextField fx:id="t1TextFieldTitle" editable="false" maxWidth="200.0" prefHeight="30.0" prefWidth="170.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="LOCATION">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font></Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="16.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="30.0" prefWidth="0.0">
+                                 <children>
+                                    <TextField fx:id="t1TextFieldLocation" editable="false" maxWidth="200.0" prefHeight="30.0" prefWidth="170.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="DATE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font></Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="16.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="30.0" prefWidth="0.0">
+                                 <children>
+                                    <TextField fx:id="t1TextFieldDate" editable="false" maxWidth="200.0" prefHeight="30.0" prefWidth="170.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="245.0" prefWidth="251.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="TAG">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font></Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="23.0" prefWidth="208.0">
+                                 <children>
+                                    <TextField fx:id="t1TextFieldTag" editable="false" prefHeight="23.0" prefWidth="225.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="RUNNING TIME">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font></Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="7.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="23.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="t1TextFieldRunningTime" editable="false" prefHeight="23.0" prefWidth="225.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="CAST">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font></Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="7.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="23.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="t1TextFieldCast" editable="false" prefHeight="23.0" prefWidth="225.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="SYNOPSIS">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font></Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="7.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="23.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="t1TextFieldSynopsis" editable="false" prefHeight="23.0" prefWidth="225.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="PRODUCE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="7.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="23.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="t1TextFieldProduce" editable="false" prefHeight="23.0" prefWidth="225.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="230.0" spacing="10.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="TICKET &amp; PRICE" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="t1LabelR" prefHeight="49.0" prefWidth="26.0" text="R">
+                                       <font>
+                                          <Font size="42.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="4.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <VBox alignment="CENTER_RIGHT" prefHeight="53.0" prefWidth="70.0">
+                                       <children>
+                                          <Label fx:id="t1LabelRTicketCount" text="0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="t1LabelRPriceNumber" text="0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="62.0">
+                                       <children>
+                                          <Label fx:id="t1LabelRTicket" text="TICKET">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="t1LabelRPrice" text="WON">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="t1LabelA" prefHeight="49.0" prefWidth="26.0" text="A">
+                                       <font>
+                                          <Font size="42.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="2.0" top="4.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <VBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="62.0">
+                                       <children>
+                                          <Label fx:id="t1LabelATicketCount" text="0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="t1LabelAPriceNumber" text="0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="62.0">
+                                       <children>
+                                          <Label fx:id="t1LabelATicket" text="TICKET">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="t1LabelAPrice" text="PRICE">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="t1LabelB" prefHeight="49.0" prefWidth="26.0" text="B">
+                                       <font>
+                                          <Font size="42.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="2.0" top="4.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <VBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="62.0">
+                                       <children>
+                                          <Label fx:id="t1LabelBTicketCount" text="0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="t1LabelBPriceNumber" text="0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="62.0">
+                                       <children>
+                                          <Label fx:id="t1LabelBTicket" text="TICKET">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label fx:id="t1LabelBPrice" text="PRICE">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="1.0" left="5.0" right="5.0" top="1.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="29.0" prefWidth="896.0">
+                     <children>
+                        <Label prefHeight="15.0" prefWidth="61.0" text="NOTICE : " />
+                        <Label fx:id="t1LabelNotice" prefHeight="15.0" prefWidth="770.0" text="내용" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </VBox>
+         </content>
+    </Tab>
+    <Tab text="REGIST">
+         <content>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="896.0">
+                     <children>
+                        <Label fx:id="t2LabelTitle" alignment="CENTER" prefHeight="35.0" prefWidth="804.0" text="REGIST" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="15.0" prefWidth="900.0" />
+                  <HBox alignment="CENTER" prefHeight="395.0" prefWidth="900.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="395.0" prefWidth="205.0">
+                           <children>
+                              <Label text="POSTER">
+                                 <VBox.margin>
+                                    <Insets bottom="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <ImageView fx:id="t2ImageView" fitHeight="230.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../../bin/images/basicimage.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="t2ButtonImage" mnemonicParsing="false" text="IMAGE" />
+                           </children>
+                           <padding>
+                              <Insets bottom="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </VBox>
+                        <VBox fillWidth="false" prefHeight="48.0" prefWidth="239.0">
+                           <children>
+                              <Label text="TITLE">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t2TextFieldTitle" prefWidth="150.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="GENRE">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <ComboBox fx:id="t2CmbGenre" prefWidth="150.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ComboBox>
+                              <Label text="LOCATION">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <ComboBox fx:id="t2CmbLocation" prefWidth="150.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </ComboBox>
+                              <Label text="DATE">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <DatePicker fx:id="t2DatePicker" prefWidth="150.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </DatePicker>
+                              <Label text="CAST">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t2TextFieldCast" prefHeight="50.0" prefWidth="150.0" />
+                              <Label text="RUNNING TIME">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t2TextFieldRunnigTime" prefWidth="150.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="3.0" left="30.0" right="3.0" top="3.0" />
+                           </padding>
+                        </VBox>
+                        <VBox fillWidth="false" prefHeight="173.0" prefWidth="209.0">
+                           <children>
+                              <Label text="TAG #1">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="45.0" prefWidth="205.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+                                       <children>
+                                          <RadioButton fx:id="t2RdoFamily" mnemonicParsing="false" text="Family" userData="#FAMILY" />
+                                          <RadioButton fx:id="t2RdoFriends" mnemonicParsing="false" text="Friends" userData="#FRIENDS" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+                                       <children>
+                                          <RadioButton fx:id="t2RdoCouple" mnemonicParsing="false" text="Couple" userData="#COUPLE" />
+                                          <RadioButton fx:id="t2RdoKids" mnemonicParsing="false" text="Kids" userData="#KIDS" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <Label text="TAG #2">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="70.0" prefWidth="205.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+                                       <children>
+                                          <RadioButton fx:id="t2RdoRomantic" mnemonicParsing="false" text="Romantic" userData="#ROMANTIC" />
+                                          <RadioButton fx:id="t2RdoScience" mnemonicParsing="false" text="Science" userData="#SCIENCE" />
+                                          <RadioButton fx:id="t2RdoHorror" mnemonicParsing="false" text="Horror" userData="#HORROR" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="8.0">
+                                       <children>
+                                          <RadioButton fx:id="t2RdoComedy" mnemonicParsing="false" text="Comedy" userData="#COMEDY" />
+                                          <RadioButton fx:id="t2RdoAction" mnemonicParsing="false" text="Action" userData="#ACTION" />
+                                          <RadioButton fx:id="t2RdoDramatic" mnemonicParsing="false" text="Dramatic" userData="#DRAMATIC" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <Label text="NOTICE">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="13.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t2TextFieldNotice" prefWidth="176.0" />
+                              <Label text="SYNOPSIS">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="13.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t2TextFieldSynopsis" prefHeight="49.0" prefWidth="176.0" />
+                              <Label text="PRODUCE">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="13.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t2TextFieldProduce" prefWidth="176.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="104.0" prefWidth="168.0">
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="10.0" top="3.0" />
+                           </padding>
+                           <children>
+                              <Label text="SEAT &amp; PRICE">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="t2LabelR" text="R">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin></Label>
+                              <HBox fillHeight="false" prefHeight="60.0" prefWidth="276.0">
+                                 <children>
+                                    <VBox prefHeight="53.0" prefWidth="52.0">
+                                       <children>
+                                          <Label prefHeight="29.0" prefWidth="51.0" text="TICKET" />
+                                          <Label prefHeight="27.0" prefWidth="60.0" text="PRICE" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="70.0" prefWidth="100.0">
+                                       <children>
+                                          <TextField fx:id="t2TextFieldRTicket">
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                          <TextField fx:id="t2TextFieldRPrice" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Label fx:id="t2LabelA" text="A">
+                                 <VBox.margin>
+                                    <Insets left="5.0" top="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <HBox fillHeight="false" prefHeight="60.0" prefWidth="276.0">
+                                 <children>
+                                    <VBox prefHeight="53.0" prefWidth="52.0">
+                                       <children>
+                                          <Label prefHeight="29.0" prefWidth="52.0" text="TICKET" />
+                                          <Label prefHeight="27.0" prefWidth="60.0" text="PRICE" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="70.0" prefWidth="100.0">
+                                       <children>
+                                          <TextField fx:id="t2TextFieldATicket">
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                          <TextField fx:id="t2TextFieldAPrice" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Label fx:id="t2LabelB" text="B">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                              <HBox fillHeight="false" prefHeight="60.0" prefWidth="276.0">
+                                 <children>
+                                    <VBox prefHeight="53.0" prefWidth="52.0">
+                                       <children>
+                                          <Label prefHeight="29.0" prefWidth="51.0" text="TICKET" />
+                                          <Label prefHeight="27.0" prefWidth="60.0" text="PRICE" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="70.0" prefWidth="100.0">
+                                       <children>
+                                          <TextField fx:id="t2TextFieldBTicket">
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                          <TextField fx:id="t2TextFieldBPrice" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="173.0" prefWidth="896.0">
+                     <children>
+                        <TableView fx:id="t2TableViewPerformance" prefHeight="160.0" prefWidth="899.0">
+                          <columns>
+                              <TableColumn prefWidth="75.0" text="CODE" />
+                            <TableColumn prefWidth="75.0" text="TITLE" />
+                            <TableColumn prefWidth="75.0" text="GENRE" />
+                              <TableColumn prefWidth="75.0" text="LOCATION" />
+                              <TableColumn prefWidth="75.0" text="DATE" />
+                              <TableColumn prefWidth="75.0" text="RUN TIME" />
+                              <TableColumn prefWidth="75.0" text="TAG" />
+                              <TableColumn prefWidth="75.0" text="CAST" />
+                              <TableColumn prefWidth="75.0" text="SYNOP" />
+                              <TableColumn prefWidth="75.0" text="PROD" />
+                              <TableColumn prefWidth="75.0" text="POSTER" />
+                              <TableColumn prefWidth="75.0" text="NOTICE" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="896.0" spacing="5.0">
+                     <children>
+                        <Button fx:id="t2ButtonRegist" mnemonicParsing="false" prefWidth="111.0" text="REGIST" />
+                        <Button fx:id="t2ButtonCreateTicket" mnemonicParsing="false" prefHeight="20.0" prefWidth="111.0" text="CREATE TICKET">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="t2ButtonClear" mnemonicParsing="false" text="CLEAR">
+                           <HBox.margin>
+                              <Insets left="608.0" />
+                           </HBox.margin></Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </VBox>
+         </content>
+    </Tab>
+      <Tab fx:id="t3Tab" text="ANALYSIS CHART">
+         <content>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="896.0">
+                     <children>
+                        <Label fx:id="t3LabelTitle" alignment="CENTER" prefHeight="35.0" prefWidth="804.0" text="ANALYSIS CHART" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="2.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fillHeight="false" prefHeight="300.0" prefWidth="900.0">
+                     <children>
+                        <VBox alignment="CENTER" prefWidth="500.0">
+                           <children>
+                              <Label text="Performance Ratio by Genre">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <PieChart fx:id="t3PieChartGenre" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER">
+                           <children>
+                              <Label text="Sales Comparison by Genre">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <BarChart fx:id="t3BarChartGenre" barGap="0.0" categoryGap="0.0" prefHeight="500.0" prefWidth="500.0">
+                                <xAxis>
+                                  <CategoryAxis animated="false" side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                           </children>
+                        </VBox>
+                        <VBox fillWidth="false" prefHeight="262.0" prefWidth="310.0">
+                           <children>
+                              <HBox prefHeight="20.0" prefWidth="188.0">
+                                 <children>
+                                    <Label text="Genre Revenue">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Label text="MUSICAL">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t3TextFieldMusical" prefHeight="23.0" prefWidth="120.0">
+                                 <VBox.margin>
+                                    <Insets bottom="6.0" left="10.0" top="4.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="CONCERT">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t3TextFieldConcert" prefHeight="23.0" prefWidth="120.0">
+                                 <VBox.margin>
+                                    <Insets bottom="6.0" left="10.0" top="4.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="PLAY">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t3TextFieldPlay" prefHeight="23.0" prefWidth="120.0">
+                                 <VBox.margin>
+                                    <Insets bottom="6.0" left="10.0" top="4.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="FESTIVAL">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t3TextFieldFestival" prefHeight="23.0" prefWidth="120.0">
+                                 <VBox.margin>
+                                    <Insets bottom="6.0" left="10.0" top="4.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="EXHIBITION">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t3TextFieldExhibition" prefHeight="23.0" prefWidth="120.0">
+                                 <VBox.margin>
+                                    <Insets bottom="6.0" left="10.0" top="4.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox fillHeight="false" prefHeight="300.0" prefWidth="900.0">
+                     <children>
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="300.0" prefWidth="500.0">
+                           <children>
+                              <Label text="Quarterly Revenue">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <LineChart fx:id="t3LineChartRevenue">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </LineChart>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER">
+                           <children>
+                              <Label text="Accumulated Revenue">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Label>
+                              <BarChart fx:id="t3BarChartRevenue" animated="false" barGap="0.0" categoryGap="0.0" prefHeight="500.0" prefWidth="500.0">
+                                <xAxis>
+                                  <CategoryAxis animated="false" side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                           </children>
+                        </VBox>
+                        <VBox fillWidth="false" prefHeight="260.0" prefWidth="310.0">
+                           <children>
+                              <HBox prefHeight="20.0" prefWidth="188.0">
+                                 <children>
+                                    <Label text="Total Revenue">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Label text="The First Quarter">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t3TextFieldFirst" prefHeight="23.0" prefWidth="120.0">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" left="10.0" top="4.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="The Second Quarter">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t3TextFieldSecond" prefHeight="23.0" prefWidth="120.0">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" left="10.0" top="4.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="The Third Quarter">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t3TextFieldThird" prefHeight="23.0" prefWidth="120.0">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" left="10.0" top="4.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="The Fourth Quarter">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t3TextFieldFourth" prefHeight="23.0" prefWidth="120.0">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" left="10.0" top="4.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="Total Revenue">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="t3TextFieldTotal" prefHeight="23.0" prefWidth="120.0">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="4.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </VBox>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
