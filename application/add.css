@@ -1,0 +1,36 @@
+AnchorPane{
+	-fx-background-image:url("../images/micc.png");
+}
+TextField, PasswordField{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-background-radius:5.0;
+	-fx-border-radius:5.0;
+}
+Button{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-background-color:lightgray;
+	-fx-opacity:0.7;
+		
+}
+TextField:focused, PasswordField:focused{
+	
+}
+Button:hover{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-cursor:hand;
+	-fx-opacity:1.0;
+	-fx-border-color:lightgray;
+}
+#labelLogin{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-font-size:30;
+	-fx-font-weight:bold;
+	-fx-text-fill:black;	
+		
+}
+Label{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-font-size:14;
+	-fx-font-weight:bold;
+	-fx-text-fill:black;	
+}

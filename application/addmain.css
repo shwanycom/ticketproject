@@ -1,0 +1,97 @@
+Label{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-font-weight:normal;
+	-fx-font-size:15;
+}
+VBox{
+	-fx-background-color:white;
+}
+Button:hover{
+	 -fx-background-color: #545454;
+	 -fx-text-fill: white;
+	 -fx-opacity: 0.7;
+	 -fx-cursor:hand;
+}
+Button{
+	 -fx-background-color: #b5b5b5;
+	 -fx-text-fill: white;
+	 -fx-opacity: 1.0;
+}
+.table-view .column-header, .table-view .filler {
+
+    -fx-background-color: #3e3838;
+
+}
+.table-view .column-header .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+#t1LabelTitle, #t2LabelTitle, #t3LabelTitle{
+	-fx-font-family:"Arial Black";
+	-fx-font-weight:normal;
+	-fx-font-size:60;
+	-fx-text-fill:black;	
+}
+#t1LabelR{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-font-size:50;
+	-fx-text-fill:black;	
+}
+#t1LabelA{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-font-size:50;
+	-fx-text-fill:black;
+}
+#t1LabelB{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-font-size:50;
+	-fx-text-fill:black;	
+}
+#t1LabelRTicket{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-text-fill:darkgray;
+	-fx-font-size:17;
+}
+#t1LabelRPrice{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-text-fill:darkgray;
+	-fx-font-size:17;
+}
+#t1LabelATicket{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-text-fill:darkgray;
+	-fx-font-size:17;
+}
+#t1LabelAPrice{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-text-fill:darkgray;
+	-fx-font-size:17;
+}
+#t1LabelBTicket{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-text-fill:darkgray;
+	-fx-font-size:17;
+}
+#t1LabelBPrice{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-text-fill:darkgray;
+	-fx-font-size:17;
+}
+#t2LabelR{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-font-size:24;
+	-fx-text-fill:black;	
+}
+#t2LabelA{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-font-size:24;
+	-fx-text-fill:black;
+}
+#t2LabelB{
+	-fx-font-family:"Berlin Sans FB";
+	-fx-font-size:24;
+	-fx-text-fill:black;	
+}
